@@ -1,5 +1,7 @@
 # pi-tool-display
 
+[![npm version](https://img.shields.io/npm/v/pi-tool-display?style=flat-square)](https://www.npmjs.com/package/pi-tool-display) [![License](https://img.shields.io/github/license/MasuRii/pi-tool-display?style=flat-square)](LICENSE)
+
 OpenCode-style tool rendering for the [Pi coding agent](https://github.com/mariozechner/pi).
 
 `pi-tool-display` keeps tool calls compact by default, adds richer diff rendering for file edits, and improves a few core chat UI details such as thinking labels and the native user prompt box.
@@ -267,13 +269,11 @@ pi-tool-display/
 │   └── zellij-modal.ts              # Modal UI primitives
 ├── config/
 │   └── config.example.json          # Starter config template
-├── tests/
-│   ├── diff-renderer-ansi.test.ts   # ANSI/background handling tests for diff rendering
-│   ├── diff-renderer-width.test.ts  # Width and background coverage tests for diff rendering
-│   ├── tool-overrides-registration.test.ts # Tool override registration tests
-│   └── tool-ui-utils.test.ts        # Utility tests for user message and diff helpers
-└── assets/
-    └── pi-tool-display.png          # README screenshot
+└── tests/
+    ├── diff-renderer-ansi.test.ts   # ANSI/background handling tests for diff rendering
+    ├── diff-renderer-width.test.ts  # Width and background coverage tests for diff rendering
+    ├── tool-overrides-registration.test.ts # Tool override registration tests
+    └── tool-ui-utils.test.ts        # Utility tests for user message and diff helpers
 ```
 
 ## Development

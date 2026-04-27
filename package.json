@@ -1,6 +1,6 @@
 {
   "name": "pi-tool-display",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Compact tool call rendering, diff visualization, and output truncation extension for Pi coding agent. Hides, collapses, and truncates verbose tool output for cleaner TUI display.",
   "type": "module",
   "main": "./index.ts",
@@ -11,7 +11,6 @@
     "index.ts",
     "src",
     "config/config.example.json",
-    "assets/pi-tool-display.png",
     "README.md",
     "CHANGELOG.md",
     "LICENSE"

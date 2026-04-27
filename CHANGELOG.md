@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.5] - 2026-04-27
+
+### Changed
+- Removed the deleted bundled screenshot asset from published package contents and removed the corresponding README project-structure reference to `assets/pi-tool-display.png`.
+
 ## [0.3.4] - 2026-04-24
 
 ### Added
