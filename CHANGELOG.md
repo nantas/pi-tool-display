@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- **Direct Tool MCP recognition**: `isMcpToolCandidate()` now checks the `label` field (using `MCP_DESCRIPTION_PATTERN`), so MCP Direct Tools registered by pi-mcp-adapter with `"MCP: <name>"` labels are correctly identified and respect `mcpOutputMode` settings.
+- **MCP call line formatting**: `formatMcpCallLine()` now uses `replace(/^MCP[:\s]+/, "")` to extract display names from both `"MCP: name"` and `"MCP name"` label formats.
+
 ## [0.3.6] - 2026-05-04
 
 ### Added

@@ -75,6 +75,11 @@ export function isMcpToolCandidate(tool: unknown): boolean {
 		return true;
 	}
 
+	const label = getTextField(tool, "label");
+	if (typeof label === "string" && MCP_DESCRIPTION_PATTERN.test(label)) {
+		return true;
+	}
+
 	const description = getTextField(tool, "description");
 	return typeof description === "string" && MCP_DESCRIPTION_PATTERN.test(description);
 }

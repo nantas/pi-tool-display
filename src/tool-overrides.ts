@@ -855,9 +855,7 @@ function formatMcpCallLine(
   const target =
     toolName === "mcp"
       ? resolveMcpProxyCallTarget(args)
-      : toolLabel.startsWith("MCP ")
-        ? toolLabel.slice("MCP ".length)
-        : toolLabel;
+      : toolLabel.replace(/^MCP[:\s]+/, "") || toolLabel;
 
   return new Text(
     `${theme.fg("toolTitle", theme.bold("MCP"))} ${theme.fg("accent", target)}${argSuffix}`,
